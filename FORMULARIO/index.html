@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>💻FORMULARIO💻</title>
+</head>
+<img src="/FORMULARIO/IMG/E2.png" height="20%" width="20%">
+<center>
+ <img src="/FORMULARIO/IMG/E1.png" height="40%" width="40%">
+</center>
+
+<body bgcolor="aqua">
+ <marquee> <h1>💻FORMULARIO💻</h1></marquee>
+ 
+ 
+<form action="" method="past">
+ <table border>
+  <tr>
+    <td>FOTO</td>
+    <td><input type="file" name="file"></type></td>
+  </tr> 
+ 
+   <td>FOLIO COMPIPENS</td>
+   <td><input typ="text" name="nombre" placeholder=" folio" required="requerido" id="folio"></td>
+   
+   
+   <tr>
+     <td>ACIERTOS</td>
+     <td><input type="number" name="aciertos" id="aciertos" placeholder="aciertos" min="0" max="128"></td> 
+     
+   </tr>
+      <tr>
+     <td>CARRERA</td>
+     <td><select name="carrera" placeholder="carrera" id="carrera">
+   <option value="Programación" selected>Programación</option>
+   <option value="Ventas">Ventas</option>
+   <option value="Maquinas">Maquinas</option>
+       
+       
+     </td> 
+     
+   </tr>
+     <tr>
+     <td>CORREO ELECTRÓNICO</td>
+     <td><input type="email" name="email" placeholder="alguien@example.com" required="requerido" id="correo"></td> 
+     
+   </tr>
+   
+        <tr>
+     <td>FECHA</td>
+     <td><input type="date" name="date"placeholder="fecha" required="requerido" id="fecha"></td> 
+     </tr>
+     
+             <tr>
+     <td>NOMBRE</td>
+     <td><input type="txt" name="nombre"placeholder="arturo"required="requerido" id="nombre"></td> 
+     
+     
+        <tr>
+     <td>APELLIDO PATERNO</td>
+     <td><input type="txt" name="paterno"placeholder="peralta" required="requerido" id="ap"></td> 
+     </tr>
+     
+     
+        <tr>
+     <td>APELLIDO MATERNO</td>
+     <td><input type="txt" name="apellido materno"placeholder="mendez" required="requerido" id="am"></td> 
+     </tr>
+     
+       <tr>
+     <td>DIA</td>
+     <td><input type="number" name="number"placeholder="28" required="requerido" id="dia"></td> 
+     </tr>
+     
+     
+     
+     
+       <tr>
+     <td>MES</td>
+     <td><input type="number" name="number"placeholder="01" required="requerido" id="mes"></td> 
+     </tr>
+     
+     
+     
+     
+     
+       <tr>
+     <td>AÑO</td>
+     <td><input type="number" name="number"placeholder="2005" required="requerido" id="año"></td> 
+     </tr>
+     
+     
+       <tr>
+     <td>NACIMIENTO</td>
+     <td><input type="txt" name="txt"placeholder="México" required="requerido" id="nacimiento"></td> 
+     </tr>
+     
+     
+            <tr>
+     <td>CURP</td>
+     <td><input type="text" name="text"placeholder="pema050128hdfrnra1" required="requerido" id="curp"></td> 
+     </tr>
+     
+     
+       <tr>
+     <td>SEXO</td>
+     <td><select name="" id="sexo">
+       <option value="femenino">FEMENINO</option>
+         <option value="masculino">MASCULINO</option>
+     </select>
+     </td> 
+     </tr>
+     
+                 <tr>
+     <td>ALERGIA</td>
+     <td><input type="text" name="txt"placeholder="alergico a la escuela" required="requerido" id="alergia"></td> 
+    </tr>
+     
+       <tr>
+     <td>TELÉFONO ASPIRANTE</td>
+     <td><input type="tel" name="tel"placeholder="5621232652" required="requerido" id="teleaspirante"></td> 
+     </tr>
+     
+      <tr>
+     <td>CORREO TUTOR</td>
+     <td><input type="email" name="email"placeholder="alguien@example.com" required="requerido" id="correot"></td> 
+     </tr>
+     <td colspan="2" align="center">
+       <input type="button" value="Guardar" onclick="imprimir()">
+        <input type="button" value="Borrar" onclick="borrar()">
+       
+     </td>
+   <table border>
+  <tr>
+  <marquee> <h1>🌐DATOS GUARDADOS🌐</h1></marquee></tr>
+  
+  <tr>
+   <td>FOLIO COMPIPENS</td>
+   <td><span id="Sfolio"></span></td>
+   
+  </tr>
+   <tr>
+     <td>ACIERTOS</td>
+     <td><span id="Saciertos"></span></td>
+     
+   </tr>
+      <tr>
+     <td>CARRERA</td>
+     <td><span id="Scarrera"></span></td> 
+     
+   </tr>
+     <tr>
+     <td>CORREO ELECTRÓNICO</td>
+     <td><span id="Scorreo"></span></td> 
+     
+   </tr>
+   
+        <tr>
+     <td>FECHA</td>
+     <td><span id="Sfecha"></span>
+     </tr>
+     
+             <tr>
+     <td>NOMBRE</td>
+     <td><span id="Snombre"></span></td> 
+     
+     
+        <tr>
+     <td>APELLIDO PATERNO</td>
+     <td><span id="Sap"></span></td> 
+     </tr>
+     
+     
+        <tr>
+     <td>APELLIDO MATERNO</td>
+     <td><span id="Sam"></span></td> 
+     </tr>
+     
+       <tr>
+     <td>DIA</td>
+     <td><span id="Sdia"></span></td> 
+     </tr>
+     
+     
+     
+     
+       <tr>
+     <td>MES</td>
+     <td><span id="Smes"></span></td> 
+     </tr>
+     
+     
+     
+     
+     
+       <tr>
+     <td>AÑO</td>
+     <td><span id="Saño"></span></td> 
+     </tr>
+     
+     
+       <tr>
+     <td>NACIMIENTO</td>
+     <td><span id="Snacimiento"></span></td> 
+     </tr>
+     
+     
+            <tr>
+     <td>CURP</td>
+     <td><span id="Scurp"></span></td> 
+     </tr>
+     
+     
+       <tr>
+     <td>SEXO</td>
+     <td><span id="Ssexo"></span>
+     </td> 
+     </tr>
+     
+                 <tr>
+     <td>ALERGIA</td>
+     <td><span id="Salergia"></span></td> 
+    </tr>
+     
+       <tr>
+     <td>TELÉFONO ASPIRANTE</td>
+     <td><span id="Stelaspirante"></span></td> 
+     </tr>
+     
+      <tr>
+     <td>CORREO TUTOR</td>
+     <td><span id="Scorreot"></span></td> 
+     </tr>
+ </table>
+  
+  <script src="app.js">
+  </script>
+  
+
+</form>
+</body>
+
+</html>
